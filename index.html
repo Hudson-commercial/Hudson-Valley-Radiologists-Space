@@ -1,0 +1,725 @@
+<!--
+   =========================================================
+   * Paper Kit PRO - v1.0.7
+   =========================================================
+   
+   * Product Page: https://www.creative-tim.com/product/paper-kit-pro
+   * Copyright 2019 Creative Tim (https://www.creative-tim.com)
+   
+   * Coded by Creative Tim
+   
+   =========================================================
+   
+   * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+   
+   -->
+<!doctype html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8" />
+      <link rel="icon" type="image/png" href="assets/img/favicon.ico">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+      <title>Paper Kit by Creative Tim</title>
+      <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+      <meta name="viewport" content="width=device-width" />
+      <link href="bootstrap3/css/bootstrap.css" rel="stylesheet" />
+      <link href="assets/css/ct-paper.css" rel="stylesheet"/>
+      <link href="assets/css/demo.css" rel="stylesheet" />
+      <link href="assets/css/themify-icons.css" rel="stylesheet">
+      <link href="assets/css/examples.css" rel="stylesheet" />
+      <link href="dist/css/lightgallery.css" rel="stylesheet">
+      <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+      <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&display=swap" rel="stylesheet">
+      <style type="text/css">
+         .google-sans-flex {
+         font-family: "Google Sans Flex", sans-serif !important;
+         font-optical-sizing: auto !important;
+         font-weight: 
+         <weight>
+         ;
+         font-style: normal;
+         font-variation-settings:
+         "slnt" 0,
+         "wdth" 100,
+         "GRAD" 0,
+         "ROND" 0;
+         }
+         .banner {
+         height: 100vh;
+         width: 100vw;
+         background: url(images/image.jpg);
+         background-size: cover;
+         position: relative;
+         }
+         .demo-gallery > ul > li a > img {
+         -webkit-transition: -webkit-transform 0.15s ease 0s;
+         -moz-transition: -moz-transform 0.15s ease 0s;
+         -o-transition: -o-transform 0.15s ease 0s;
+         transition: transform 0.15s ease 0s;
+         -webkit-transform: scale3d(1, 1, 1);
+         transform: scale3d(1, 1, 1);
+         height: 100%;
+         width: 100%;
+         }
+         .demo-gallery > ul > li a:hover > img {
+         -webkit-transform: scale3d(1.1, 1.1, 1.1);
+         transform: scale3d(1.1, 1.1, 1.1);
+         }
+         .demo-gallery > ul > li a:hover .demo-gallery-poster > img {
+         opacity: 1;
+         }
+         .demo-gallery > ul > li a .demo-gallery-poster {
+         background-color: rgba(0, 0, 0, 0.1);
+         bottom: 0;
+         left: 0;
+         position: absolute;
+         right: 0;
+         top: 0;
+         -webkit-transition: background-color 0.15s ease 0s;
+         -o-transition: background-color 0.15s ease 0s;
+         transition: background-color 0.15s ease 0s;
+         }
+         .demo-gallery > ul > li a .demo-gallery-poster > img {
+         left: 50%;
+         margin-left: -10px;
+         margin-top: -10px;
+         opacity: 0;
+         position: absolute;
+         top: 50%;
+         -webkit-transition: opacity 0.3s ease 0s;
+         -o-transition: opacity 0.3s ease 0s;
+         transition: opacity 0.3s ease 0s;
+         }
+         .demo-gallery > ul > li a:hover .demo-gallery-poster {
+         background-color: rgba(0, 0, 0, 0.5);
+         }
+         .demo-gallery .justified-gallery > a > img {
+         -webkit-transition: -webkit-transform 0.15s ease 0s;
+         -moz-transition: -moz-transform 0.15s ease 0s;
+         -o-transition: -o-transform 0.15s ease 0s;
+         transition: transform 0.15s ease 0s;
+         -webkit-transform: scale3d(1, 1, 1);
+         transform: scale3d(1, 1, 1);
+         height: 100%;
+         width: 100%;
+         }
+         .demo-gallery .justified-gallery > a:hover > img {
+         -webkit-transform: scale3d(1.1, 1.1, 1.1);
+         transform: scale3d(1.1, 1.1, 1.1);
+         }
+         .demo-gallery .justified-gallery > a:hover .demo-gallery-poster > img {
+         opacity: 1;
+         }
+         .demo-gallery .justified-gallery > a .demo-gallery-poster {
+         background-color: rgba(0, 0, 0, 0.1);
+         bottom: 0;
+         left: 0;
+         position: absolute;
+         right: 0;
+         top: 0;
+         -webkit-transition: background-color 0.15s ease 0s;
+         -o-transition: background-color 0.15s ease 0s;
+         transition: background-color 0.15s ease 0s;
+         }
+         .demo-gallery .justified-gallery > a .demo-gallery-poster > img {
+         left: 50%;
+         margin-left: -10px;
+         margin-top: -10px;
+         opacity: 0;
+         position: absolute;
+         top: 50%;
+         -webkit-transition: opacity 0.3s ease 0s;
+         -o-transition: opacity 0.3s ease 0s;
+         transition: opacity 0.3s ease 0s;
+         }
+         .demo-gallery .justified-gallery > a:hover .demo-gallery-poster {
+         background-color: rgba(0, 0, 0, 0.5);
+         }
+         .demo-gallery .video .demo-gallery-poster img {
+         height: 48px;
+         margin-left: -24px;
+         margin-top: -24px;
+         opacity: 0.8;
+         width: 48px;
+         }
+         .demo-gallery.dark > ul > li a {
+         border: 3px solid #04070a;
+         }
+         .content-center {
+         position: absolute; /* Takes the element out of the normal flow */
+         top: 50%; /* Moves the top edge of the element to the vertical center of the parent */
+         left: 50%; /* Moves the left edge of the element to the horizontal center of the parent */
+         transform: translate(-50%, -50%); /* Adjusts the element's position by half its own width and height */
+         padding: 20px;
+         color: white;
+         width: 70%;
+         }
+         .margin-auto { margin-left: auto; margin-right: auto; }
+         .div-banner-info{
+         position: relative;
+         top: 40%;
+         left: 10%;
+         color: white;
+         }
+         .margin-top {margin-top: 1.4em;}
+         .margin-top-div {margin-top: 2.4em;}
+         .brand { width: 200px !important; }
+         .container-property {
+         width: 84%; 
+         margin: 1.4em auto;
+         padding: 1em;
+         }
+         body {
+         max-width: 100vw;
+         overflow-x: hidden; /* Prevents horizontal scrollbars if content attempts to exceed 100vw */
+         }
+         div {
+         max-width: 100vw;
+         /* Other div styles */
+         }
+         .short-line {
+         width: 100px; /* Adjust as desired, e.g., 50% for relative width */
+         border: none; /* Remove default border */
+         border-top: 2px solid #333; /* Style the line (color, thickness) */
+         margin: 1em auto; /* Center the line and add spacing */
+         /* You can adjust margin-top and margin-bottom for spacing above/below */
+         }
+         .property-image-fact-div {
+         background: #eee;
+         height: 540px;
+         margin-top: 4em;
+         padding-left: 2em; padding-right: 2em; padding-top: 3em;
+         }
+         .property-image-fact-div .key-fact-area { position: relative; right: 21%; top: -10px; }
+         .img-left {
+         width: 100%;
+         }
+         .key-fact-area .title {
+         margin-bottom: .7em;
+         }
+         .property-image-area {background: whitesmoke;}
+         .card-right-custom {
+         border-left: 5px solid rgb(45, 106, 196, 1.0); /* Example border */
+         box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Example shadow */
+         } .blue-color {color: rgb(45, 106, 196, 1.0) !important; padding: 1em;}
+         .image-info a i { text-decoration: none !important; }
+         .card-right-custom li {font-size: 18px;}
+         .category {margin-left: .4eml color: black;}
+         .property-data-div {
+         background: rgb(24, 32, 33, 1.0);
+         padding-top: 4em; padding-bottom: 4em; padding-left: 1em;
+         }
+         .description-words {
+         line-height: 1.7em;
+         font-size: 24px;
+         }
+         .hudson-background {    background: rgba(23, 72, 115, 1) !important;}
+         .icon-row-area .col-md-4{ position: relative; right: 1%;  }
+         .filter-div {position: absolute; top: 0px; width: 100%; height: 100%; 
+         background-color: rgba(31, 107, 110, 0.7); /* Dark blue with 70% opacity */   }
+         .color-white {color: white !important; }
+         .hudson-color {color: rgba(23, 72, 115, 1) !important;}
+         .orange-color {color: rgb(173, 106, 43) !important}
+         .extra-color { color: rgb(79, 76, 76, 1.0); !important;}
+         /* Container must be positioned relatively so we can position the overlay absolutely within it */
+         .image-container {
+         position: relative;
+         display: inline-block; /* Helps wrap the container around the image dimensions */
+         }
+         /* Hide the overlay text by default */
+         .overlay-text {
+         position: absolute;
+         top: 0;
+         bottom: 0;
+         left: 0;
+         right: 0;
+         height: 100%;
+         width: 100%;
+         opacity: 0; /* Starts invisible */
+         transition: opacity .3s ease; /* Smooth transition for appearance */
+         background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent black background */
+         color: white; /* Text color */
+         display: flex;
+         justify-content: center; /* Center text horizontally */
+         align-items: center; /* Center text vertically */
+         text-align: center;
+         cursor: pointer; /* Ensures the hand icon appears even over the text area */
+         text-decoration: none; /* Removes underline from the link text */
+         }
+         /* Show the overlay text when hovering over the container */
+         .image-container:hover .overlay-text {
+         opacity: 1; /* Becomes visible on hover */
+         }
+         /* Optional: Ensure the image fits nicely */
+         .image-container img {
+         display: block;
+         width: 100%;
+         height: auto;
+         }
+         .hudson-logo {
+         position: relative;
+         left: 24%;
+         }
+         .container-custom {
+         width: 90%; margin: auto;
+         }
+         .links {margin-top: 2em;}
+         .banner-image {background-position: center -145px;}
+         @media (max-width: 1116px) {
+         .banner-image {
+         background-color: background-position: center 0px !important;
+         }
+         }
+         @media (max-width: 991px) {
+         .property-image-fact-div {
+         height: auto !important;
+         }
+         .property-image-fact-div .key-fact-area { position: relative; right: 0px; top: 0px;  margin-bottom: 3em;}
+         }
+         .property-area p { font-size: 18px;  }
+         @media (max-width: 991px) {
+         /* Targets the ul element with the ID 'lightgallery' */
+         #lightgallery {
+         /* Ensures the list itself displays correctly, often changing from a flex/grid container */
+         display: block; 
+         width: 100%; /* Optional: ensures the list takes full width of its container */
+         padding: 0; /* Optional: remove default list padding */
+         margin: 0; /* Optional: remove default list margin */
+         }
+         /* Targets the li items within the lightgallery ul */
+         #lightgallery li {
+         /* If your li items were previously inlined or floated, this stacks them */
+         display: block; 
+         width: 100%; /* Makes each list item take the full width */
+         margin-bottom: 10px; /* Optional: adds spacing between stacked items */
+         }
+         /* Targets the div elements *inside* the li items */
+         #lightgallery li div {
+         /* This is the key part of your request */
+         display: block;
+         width: 100%;
+         box-sizing: border-box; /* Ensures padding/borders are included in the 100% width calculation */
+         }
+         }
+      </style>
+   </head>
+   <body class="about-us">
+      <div class="header-wrapper">
+         <nav class="navbar navbar-default" role="navigation-demo" id="navbar-links">
+            <div class="container">
+               <!-- Brand and toggle get grouped for better mobile display -->
+               <div class="navbar-header">
+                  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigation-example-2">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  </button>
+               </div>
+               <!-- Collect the nav links, forms, and other content for toggling -->
+               <div class="collapse navbar-collapse" id="navigation-example">
+                  <ul class="nav navbar-nav">
+                     <li>
+                        <div class="logo-container">
+                           <div class="logo">
+                              <img src="images/hudson-logo.png" alt="Hudson Commercial Real Estate">
+                           </div>
+                           <div class="brand google-sans-flex">
+                              <strong>Hudson Commercial Real Estate</strong> 
+                           </div>
+                        </div>
+                     </li>
+                  </ul>
+                  <ul class="nav navbar-nav navbar-right">
+                     <li>
+                     </li>
+                     <li>
+                        <a href="https://hudsoncommercial.com/contact-us/" class="btn hudson-background btn-fill btn-icon"><i class="fa fa-building"></i> Contact Us</a>
+                     </li>
+                  </ul>
+               </div>
+               <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container-->
+         </nav>
+         <div class="header banner-image" style="background-image: url('images/image.jpg'); background-position: center -145px; background-repeat: no-repeat; 
+            ">
+            <div class="filter "></div>
+            <div class="div-banner-info">
+               <h1>2678 South Rd</h1>
+               <h3>Poughkeepsie, NY</h3>
+            </div>
+         </div>
+      </div>
+      <div class="property-area">
+         <div class="row">
+            <div class="col-md-6 col-md-offset-3 text-center title margin-top">
+               <h2 class="margin-top">Beechwood Office Park </h2>
+               <hr class="short-line">
+            </div>
+         </div>
+         <div class="container-property">
+            <div class="row margin-top-div icon-row-area">
+               <div class="col-md-4">
+                  <div class="info">
+                     <div class="icon hudson-color">
+                        <i class="ti-gallery"></i>
+                     </div>
+                     <div class="description">
+                        <h4> Excellent Location </h4>
+                        <p> Convenient and desirable location on Route 9 in the Town of Poughkeepsie (opposite Locust Grove).</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-4">
+                  <div class="info">
+                     <div class="icon orange-color">
+                        <i class="ti-light-bulb"></i>
+                     </div>
+                     <div class="description">
+                        <h4> Server Room </h4>
+                        <p>State of the art IT server room and work area with a back up gas fired generator and UPS system.</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-4">
+                  <div class="info">
+                     <div class="icon extra-color">
+                        <i class="ti-pie-chart"></i>
+                     </div>
+                     <div class="description">
+                        <h4> Large Space </h4>
+                        <p>6,500 SF of above standard office space. Partially furnished and includes conference room.</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- End of property area -->
+      <div class="property-image-fact-div">
+         <div class="row">
+            <div class="col-md-8">
+               <div class="image-div-left">
+                  <div class="col-md-10 margin-auto">
+                     <div class="card-big-shadow card-image ">
+                        <div class="card" data-radius="none" style="background-image: url('images/office-lobby.jpg');">
+                        </div>
+                        <!-- end card -->
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="col-md-4 ">
+               <div class="key-fact-area">
+                  <h2 class="title">Key Facts</h2>
+                  <div class="right-office-space-about card card-right-custom pt-4 pl-4 pr-4 " id="about">
+                     <div class="card mb-3  mt-5">
+                        <ul class="list-unstyled pl-4 pr-4">
+                           <li class="mb-2">
+                              <i class="fa fa-building  mr-2 blue-color"></i>
+                              <span class="category font-weight-bold"><strong>For Lease:</strong></span> <span class="float-right font-weight-bold">Yes</span>
+                           </li>
+                           <li class="mb-2">
+                              <i class="fa fa-building  mr-2 blue-color"></i>
+                              <span class="category font-weight-bold"><strong>Space Size:</strong> </span> <span class="float-right font-weight-bold">6,500 SF</span>
+                           </li>
+                           <li class="mb-2">
+                              <i class="fa fa-building  mr-2 blue-color"></i>
+                              <span class="category font-weight-bold"> <strong>Zoning:</strong> </span> <span class="float-right font-weight-bold">Office</span>
+                           </li>
+                           <li class="mb-2">
+                              <i class="fa fa-building  mr-2 blue-color"></i>
+                              <span class="category font-weight-bold"> <strong>Year Built:</strong> </span> <span class="float-right font-weight-bold">
+                              1985</span>
+                           </li>
+                           <li class="mb-2">
+                              <i class="fa fa-building  mr-2 blue-color"></i>
+                              <span class="category font-weight-bold"><strong class="">Building Size:</strong> </span> <span class="float-right font-weight-bold">25,000 SF</span>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- End Of Property Image Fact Div -->
+      <div class="header-wrapper">
+         <div class="header" style="background-image: url('images/image-pages.jpg');
+            ">
+            <div class="filter"></div>
+            <div class="container text-center">
+               <h1>Excelent Route 9 Location</h1>
+               <a href="https://maps.app.goo.gl/xbjFEJ1K45F7VsRR7" class="color-white">
+                  <h3>2678 South Rd Poughkeepsie, NY 12601 <span>    <i class="fa fa-map-marker" aria-hidden="true"></i></span></h3>
+               </a>
+            </div>
+         </div>
+      </div>
+      <div class="property-data-div">
+         <div class=" ">
+            <div class="row">
+               <div class="section text-center landing-section " style="border-radius: 8px; width: 90%; margin: 0 auto;">
+                  <div class="">
+                     <div class="row">
+                        <div class="container">
+                           <h2 >Space Descrption</h2>
+                           <h5 class="description-words">6,500 SF of above standard office space in convenient and desirable location on Route 9 in the Town of Poughkeepsie (opposite Locust Grove). Space includes conference room, reception-waiting room, 2 large open areas with workstations, mail-copy-print-fax area, 2 large corner offices, 3 large offices with windows, 9 additional offices, kitchenette plus state of the art IT server room and work area with a back up gas fired generator and UPS system. Private offices have steel and glass walls. Partially furnished.  </h5>
+                           <br>
+                           <a href="mailto:sam@hudsoncommercial.com" class="btn hudson-background btn-fill btn-largd">Contact Broker</a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- End of Property Data Div -->
+      <div class="property-image-area container-fluid ">
+         <div class="row margin-top">
+            <div class="col-md-6 col-md-offset-3 text-center title margin-top">
+               <h2>Space Images</h2>
+            </div>
+         </div>
+         <div class="container-fluid margin-top">
+            <div class="row margin-top">
+               <ul id="lightgallery" class="list-unstyled row ">
+                  <li class=" col-md-4 card-big-shadow card-image image-container"  data-src="images/image-lobby-4.jpg" data-sub-html="<h4>Font Lobby</h4><p>An image of the first floor to the right when you walk in</p>" data-pinterest-text="Pin it1" data-tweet-text="share on twitter 1">
+                     <a href="" class="">
+                        <div class="card" data-radius="none" style="background-image: url('images/image-lobby-4.jpg');">
+                           <div class="overlay-text">Click to view</div>
+                        </div>
+                     </a>
+                  </li>
+                  <li class="col-md-4 card-big-shadow card-image image-container"  data-src="images/office-lobby.jpg" data-sub-html="<h4>Font Lobby</h4><p>Font Lobby</h4><p>An image of the first floor to the left when you walk in</p>" data-pinterest-text="Pin it1" data-tweet-text="share on twitter 1">
+                     <a href="">
+                        <div class="card" data-radius="none" style="background-image: url('images/office-lobby.jpg');">
+                           <div class="overlay-text">Click to view</div>
+                        </div>
+                     </a>
+                  </li>
+                  <li class="col-md-4 card-big-shadow card-image image-container"  data-src="images/HR-Image-5.jpg" data-sub-html="<h4>Hudson Valley Radiologists Space</h4><p>The second floor space with large cubicles and an open-plan design</p>" data-pinterest-text="Pin it1" data-tweet-text="share on twitter ">
+                     <a href="">
+                        <div class="card" data-radius="none" style="background-image: url('images/HR-Image-5.jpg');">
+                           <div class="overlay-text">Click to view</div>
+                        </div>
+                     </a>
+                  </li>
+                  <li class=" col-md-4 card-big-shadow card-image image-container"  data-src="images/HR-Image-7.jpg" data-sub-html="<h4>Hudson Valley Radiologists Space</h4><p>The second floor space with large cubicles and an open-plan design</p>" data-pinterest-text="Pin it1" data-tweet-text="share on twitter 1">
+                     <a href="">
+                        <div class="card" data-radius="none" style="background-image: url('images/HR-Image-7.jpg');">
+                           <div class="overlay-text">Click to view</div>
+                        </div>
+                     </a>
+                  </li>
+                  <li class="col-md-4 card-big-shadow card-image image-container"  data-src="images/HR-image-4.jpg" data-sub-html="<h4>Hudson Valley Radiologists Space</h4><p>Second floor space large conference room</p>" data-pinterest-text="Pin it1" data-tweet-text="share on twitter 1">
+                     <a href="">
+                        <div class="card" data-radius="none" style="background-image: url('images/HR-image-4.jpg');">
+                           <div class="overlay-text">Click to view</div>
+                        </div>
+                     </a>
+                  </li>
+                  <li class="col-md-4 card-big-shadow card-image image-container"  data-src="images/HR-image-3.jpg" data-sub-html="<h4>Hudson Valley Radiologists Space</h4><p>The kitchin office space area</p>" data-pinterest-text="Pin it1" data-tweet-text="share on twitter 1">
+                     <a href="">
+                        <div class="card" data-radius="none" style="background-image: url('images/HR-image-3.jpg');">
+                           <div class="overlay-text">Click to view</div>
+                        </div>
+                     </a>
+                  </li>
+                  <li class=" col-md-4 card-big-shadow card-image image-container"  data-src="images/HR-image-2.jpg" data-sub-html="<h4>Hudson Valley Radiologists Space</h4><p>the second floor space with large cubicles and open-plan desinged </p>" data-pinterest-text="Pin it1" data-tweet-text="share on twitter 1">
+                     <a href="">
+                        <div class="card" data-radius="none" style="background-image: url('images/HR-image-2.jpg');">
+                           <div class="overlay-text">Click to view</div>
+                        </div>
+                     </a>
+                  </li>
+                  <li class="col-md-4 card-big-shadow card-image image-container"  data-src="images/HR-Image-8.jpg" data-sub-html="<h4>Hudson Valley Radiologists Space</h4><p>The second floor space with large cubicles and an open-plan design</p>" data-pinterest-text="Pin it1" data-tweet-text="share on twitter 1">
+                     <a href="">
+                        <div class="card" data-radius="none" style="background-image: url('images/HR-Image-8.jpg');">
+                           <div class="overlay-text">Click to view</div>
+                        </div>
+                     </a>
+                  </li>
+                  <li class="col-md-4 card-big-shadow card-image image-container"  data-src="images/HR-Image-14.jpg" data-sub-html="<h4>Hudson Valley Radiologists Space</h4><p>The Server Room</p>" data-pinterest-text="Pin it1" data-tweet-text="share on twitter 1">
+                     <a href="">
+                        <div class="card" data-radius="none" style="background-image: url('images/HR-Image-14.jpg');">
+                           <div class="overlay-text">Click to view</div>
+                        </div>
+                     </a>
+                  </li>
+                  <li class=" col-md-4 card-big-shadow card-image image-container"  data-src="images/HR-Image-19.jpg" data-sub-html="<h4>Hudson Valley Radiologists Space</h4><p>The Server Room </p>" data-pinterest-text="Pin it1" data-tweet-text="share on twitter 1">
+                     <a href="">
+                        <div class="card" data-radius="none" style="background-image: url('images/HR-Image-19.jpg');">
+                           <div class="overlay-text">Click to view</div>
+                        </div>
+                     </a>
+                  </li>
+                  <li class="col-md-4 card-big-shadow card-image image-container"  data-src="images/HR-Image-24.jpg" data-sub-html="<h4>Hudson Valley Radiologists Space</h4><p>The Server Room</p>" data-pinterest-text="Pin it1" data-tweet-text="share on twitter 1">
+                     <a href="">
+                        <div class="card" data-radius="none" style="background-image: url('images/HR-Image-24.jpg');">
+                           <div class="overlay-text">Click to view</div>
+                        </div>
+                     </a>
+                  </li>
+                  <li class="col-md-4 card-big-shadow card-image image-container"  data-src="images/HR-Image-21.jpg" data-sub-html="<h4>Hudson Valley Radiologists Space</h4><p>The Server Room</p>" data-pinterest-text="Pin it1" data-tweet-text="share on twitter 1">
+                     <a href="">
+                        <div class="card" data-radius="none" style="background-image: url('images/HR-Image-21.jpg');">
+                           <div class="overlay-text">Click to view</div>
+                        </div>
+                     </a>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </div>
+      <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+         <div class="modal-dialog">
+            <div class="modal-content">
+               <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                  <h4 class="modal-title" id="myModalLabel"></h4>
+               </div>
+               <div class="modal-body" id="modalBodyContent">
+                  <!-- Content will be loaded here by JavaScript -->
+               </div>
+               <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+               </div>
+            </div>
+            <!-- /.modal-content -->
+         </div>
+         <!-- /.modal-dialog -->
+      </div>
+      <!-- /.modal -->
+      <footer class="footer footer-black">
+         <div class="container-custom">
+            <div class="row">
+               <div class="col-md-6 col-sm-4">
+                  <div class="logo ">
+                     <div class="row">
+                        <div class="col-md-4">
+                           <h3><img src="images/hudson-logo.png" class="hudson-logo"> <span> </span></h3>
+                        </div>
+                        <div class="col-md-8">
+                           <h3>Hudson Commercial </h3>
+                           <h3>Real Estate</h3>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-6 ">
+                  <div class="links">
+                     <ul>
+                        <li>
+                           <a href="https://hudsoncommercial.com/">
+                           Home
+                           </a>
+                        </li>
+                        <li>
+                           <a href="https://hudsoncommercial.com/frontpage/about/">
+                           About
+                           </a>
+                        </li>
+                        <li>
+                           <a href="https://hudsoncommercial.com/management/">
+                           Management
+                           </a>
+                        </li>
+                        <li>
+                           <a href="https://hudsoncommercial.com/contact-us/">
+                           Contact Us
+                           </a>
+                        </li>
+                        <li>
+                           <a href="https://www.loopnet.com/Listing/2678-South-Rd-Poughkeepsie-NY/38555443/">
+                           Loopnet Listing
+                           </a>
+                        </li>
+                        <li>
+                           <a href="#navbar-links">
+                           Back To Top
+                           </a>
+                        </li>
+                     </ul>
+                     <hr>
+                     <div class="copyright">
+                        <div class="pull-left">
+                           © Hudson Commercial Real Estate Corp
+                        </div>
+                        <div class="pull-right">
+                           <ul>
+                              <li>
+                                 <button type="button" class="btn btn-link" data-toggle="modal" data-target="#myModal" data-content-type="terms">Terms </button>
+                                 </a>
+                              </li>
+                              |
+                              <li>
+                                 <button type="button" class="btn btn-link" data-toggle="modal" data-target="#myModal" data-content-type="privacy"> Privacy </button>  <a  data-toggle="modal" data-target="#termsPrivacyModal">
+                              </li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- Terms and Conditions Content -->
+         <div id="termsContent" style="display: none;">
+            <h3>Terms and Conditions</h3>
+            <p>These terms and conditions outline the rules and regulations for the use of Hudson Commercial Real Estate's Website, located at 2678 SOuth Road, Poughkeepsie NY. Please do copy any of the data from the website.</p>
+            <p>By accessing this website we assume you accept these terms and conditions. Do not continue to use This Website if you do not agree to take all of the terms and conditions stated on this page.</p>
+            <!-- Add more terms content here -->
+         </div>
+         <!-- Privacy Policy Content -->
+         <div id="privacyContent" style="display: none;">
+            <h3>Privacy Policy</h3>
+            <p>This privacy policy sets out how Hudson Commercial Real Estate uses and protects any information that you give HudsonCommercail Real Estate when you use this website.</p>
+            <p>We Do Not Collect Any Data from Viewing The Website</p>
+            <p>Hudson Commercial Real Estate is committed to ensuring that your privacy is protected. Should we ask you to provide certain information by which you can be identified when using this website, then you can be assured that it will only be used in accordance with this privacy statement.</p>
+            <!-- Add more privacy policy content here -->
+         </div>
+      </footer>
+   </body>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript"></script>
+   <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js" type="text/javascript"></script>
+   <script src="bootstrap3/js/bootstrap.js" type="text/javascript"></script>
+   <script type="text/javascript">
+      $(document).ready(function() {
+      $('#myModal').on('show.bs.modal', function (event) {
+        var button = $(event.relatedTarget); // Button that triggered the modal
+        var contentType = button.data('content-type'); // Extract info from data-* attributes
+        var modal = $(this);
+      
+        if (contentType === 'terms') {
+            modal.find('.modal-title').text('Terms and Conditions');
+            modal.find('#modalBodyContent').html($('#termsContent').html());
+        } else if (contentType === 'privacy') {
+            modal.find('.modal-title').text('Privacy Policy');
+            modal.find('#modalBodyContent').html($('#privacyContent').html());
+        }
+      });
+      });
+   </script>
+   <!--  Plugins -->
+   <script src="assets/js/ct-paper-checkbox.js"></script>
+   <script src="assets/js/ct-paper-radio.js"></script>
+   <script src="assets/js/bootstrap-select.js"></script>
+   <script src="assets/js/bootstrap-datepicker.js"></script>
+   <script src="assets/js/ct-paper.js"></script>
+   <script src="https://cdn.jsdelivr.net/picturefill/2.3.1/picturefill.min.js"></script>
+   <script src="https://cdn.rawgit.com/sachinchoolur/lightgallery.js/master/dist/js/lightgallery.js"></script>
+   <script src="https://cdn.rawgit.com/sachinchoolur/lg-pager.js/master/dist/lg-pager.js"></script>
+   <script src="https://cdn.rawgit.com/sachinchoolur/lg-autoplay.js/master/dist/lg-autoplay.js"></script>
+   <script src="https://cdn.rawgit.com/sachinchoolur/lg-fullscreen.js/master/dist/lg-fullscreen.js"></script>
+   <script src="https://cdn.rawgit.com/sachinchoolur/lg-zoom.js/master/dist/lg-zoom.js"></script>
+   <script src="https://cdn.rawgit.com/sachinchoolur/lg-hash.js/master/dist/lg-hash.js"></script>
+   <script src="https://cdn.rawgit.com/sachinchoolur/lg-share.js/master/dist/lg-share.js"></script>
+   <script src="demo/js/lg-rotate.js"></script>
+   <script>
+      lightGallery(document.getElementById('lightgallery'));
+   </script>
+</html>
