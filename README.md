@@ -12,7 +12,7 @@
 ## About
 
 This is a professionally designed website for marketing and leasing the office space available at 2678 South Rd, Poughkeepsie, NY.
-.
+
 
 ## Tools
 
