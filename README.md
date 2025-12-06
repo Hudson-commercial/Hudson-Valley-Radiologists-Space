@@ -1,5 +1,5 @@
  
-# Hudson Valley Radiologists Space St For Sale / 2678 South Rd, Poughkeepsie, NY
+# Hudson Valley Radiologists Space St For Lease / 2678 South Rd, Poughkeepsie, NY
 > A GitHub page website used as a web brochure for a piece of real estate.
 
 ## Links
